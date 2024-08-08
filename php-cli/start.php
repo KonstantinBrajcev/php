@@ -1,4 +1,44 @@
 <?php
+
+//------------------------------------------------------------------------
+
+//function power($val, $pow)
+//{
+//    // Базовый случай: любое число в степени 0 равно 1
+//    if ($pow == 0) {
+//        return 1;
+//    }
+//    // Если степень отрицательная, используем обратное число
+//    if ($pow < 0) {
+//        return 1 / power($val, -$pow);
+//    }
+//    // Рекурсивный случай
+//    return $val * power($val, $pow - 1);
+//}
+//
+//// Пример использования
+//$number = 2;
+//$exponent = 3;
+//$result = power($number, $exponent);
+//echo "$number в степени $exponent равно $result"; // Вывод: 2 в степени 3 равно 8
+
+//------------------------------------------------------------------
+
+//function power($val, $pow)
+//{   // Базовый случай: любое число в степени 0 равно 1
+//    if ($pow == 0) {return 1;}
+//    // Если степень отрицательная, используем обратное число
+//    if ($pow < 0) {return 1 / power($val, -$pow);}
+//    // Рекурсивный случай
+//    return $val * power($val, $pow - 1);
+//}
+//$number = 4; // число
+//$exponent = 8; // степень числа
+//$result = power($number, $exponent);
+//echo "$number в $exponent-й степени = $result"; // Вывод: 2 в степени 3 равно 8
+
+//--------------------------------------------------------------------------
+
 function getCurrentTimeWithDeclension() {
     $timezone = new DateTimeZone('Europe/Minsk'); // Замените на ваш часовой пояс
     $currentTime = new DateTime('now', $timezone);// Получаем текущее время
@@ -24,5 +64,6 @@ function getMinuteDeclension($minutes) {
     } else {return 'минут';}
 }
 echo getCurrentTimeWithDeclension();
+
 // docker run --rm -v ${pwd}/php-cli/:/cli php:8.2-cli php /cli/start.php
 ?>
