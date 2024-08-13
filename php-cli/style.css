@@ -1,0 +1,57 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+}
+
+.center {
+  display: flex; /* Используем Flexbox */
+  justify-content: space-between; /* Распределение пространства между элементами */
+  align-items: stretch; /* Выравнивание по верхнему краю */
+}
+
+/* Стили для бокового меню */
+.menu {
+  height: 150px;
+  width: 30%; /* Ширина бокового меню */
+  padding: 10px;
+  align-content: center;
+  background-color: lightblue;
+}
+
+/* Стили для основного текста */
+.text {
+  width: 70%; /* Ширина текстовой области */
+  padding: 10px;
+  background-color: lightcoral;
+  align-content: center;
+}
+
+/* Стили для футера */
+.footer {
+  height: 150px;
+  width: 100%;
+  background-color: lightgray;
+  text-align: center;
+  align-content: center;
+  padding: 20px;
+}
+
+/* Стили для шапки */
+.header {
+  height: 150px;
+  width: 100%;
+  background-color: lightgreen;
+  text-align: center;
+  align-content: center;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
